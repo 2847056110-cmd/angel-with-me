@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 460">
+  <defs><radialGradient id="g" cx="50%" cy="18%" r="75%"><stop offset="0" stop-color="#e1c783"/><stop offset=".5" stop-color="#8a744e"/><stop offset="1" stop-color="#16130f"/></radialGradient></defs>
+  <rect width="320" height="460" rx="22" fill="url(#g)"/>
+  <rect x="22" y="24" width="276" height="412" rx="16" fill="none" stroke="#e9dcc0" stroke-opacity=".55" stroke-width="2"/>
+  <circle cx="160" cy="210" r="82" fill="none" stroke="#e9dcc0" stroke-width="5"/>
+  <path d="M112 180c36 28 60 28 96 0M118 242c30 20 54 20 84 0" stroke="#d5bd83" stroke-width="7" stroke-linecap="round"/>
+  <text x="160" y="356" fill="#e9dcc0" text-anchor="middle" font-size="27" font-family="serif">GLUTTONY</text>
+  <text x="160" y="392" fill="#d5bd83" text-anchor="middle" font-size="22" font-family="serif">暴食</text>
+</svg>

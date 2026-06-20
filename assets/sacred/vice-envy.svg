@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 460">
+  <defs><radialGradient id="g" cx="30%" cy="20%" r="80%"><stop offset="0" stop-color="#b8c7a0"/><stop offset=".5" stop-color="#557066"/><stop offset="1" stop-color="#15140f"/></radialGradient></defs>
+  <rect width="320" height="460" rx="22" fill="url(#g)"/>
+  <rect x="22" y="24" width="276" height="412" rx="16" fill="none" stroke="#e9dcc0" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M74 226c50-90 122-90 172 0-50 80-122 80-172 0z" fill="none" stroke="#e9dcc0" stroke-width="5"/>
+  <circle cx="160" cy="226" r="42" fill="#15140f" fill-opacity=".44" stroke="#d5bd83"/>
+  <circle cx="160" cy="226" r="14" fill="#e9dcc0"/>
+  <text x="160" y="356" fill="#e9dcc0" text-anchor="middle" font-size="30" font-family="serif">ENVY</text>
+  <text x="160" y="392" fill="#d5bd83" text-anchor="middle" font-size="22" font-family="serif">嫉妒</text>
+</svg>

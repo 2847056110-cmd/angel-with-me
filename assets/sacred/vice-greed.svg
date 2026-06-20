@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 460">
+  <defs><radialGradient id="g" cx="50%" cy="18%" r="75%"><stop offset="0" stop-color="#c8d1c1"/><stop offset=".48" stop-color="#58727a"/><stop offset="1" stop-color="#121314"/></radialGradient></defs>
+  <rect width="320" height="460" rx="22" fill="url(#g)"/>
+  <rect x="22" y="24" width="276" height="412" rx="16" fill="none" stroke="#e9dcc0" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M160 96l96 56v112l-96 56-96-56V152z" fill="none" stroke="#e9dcc0" stroke-width="5"/>
+  <path d="M160 96v224M64 152l96 56 96-56M64 264l96-56 96 56" stroke="#d5bd83" stroke-width="3"/>
+  <text x="160" y="356" fill="#e9dcc0" text-anchor="middle" font-size="30" font-family="serif">GREED</text>
+  <text x="160" y="392" fill="#d5bd83" text-anchor="middle" font-size="22" font-family="serif">贪婪</text>
+</svg>
