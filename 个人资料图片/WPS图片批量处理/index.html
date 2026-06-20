@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>未完成的自画像 | 天使档案作品集</title>
+  <meta name="description" content="夏雨宁的个人作品集，以天使西幻梦核视觉重组演示设计、影像剪辑、网页界面与品牌策划作品。">
+  <meta property="og:title" content="未完成的自画像">
+  <meta property="og:description" content="一座银色、轻盈、可交互的个人作品档案塔。">
+  <meta property="og:image" content="assets/angel/angel-eye.jpeg">
+  <link rel="icon" href="assets/angel/angel-candle.jpeg">
+  <link rel="preload" as="image" href="assets/angel/angel-eye.jpeg">
+  <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+  <a class="skip-link" href="#works">跳到作品集</a>
+
+  <header class="site-head">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <span class="brand__mark">UI</span>
+      <span class="brand__text">未完成的自画像</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="quick-nav" id="site-nav" aria-label="页面栏目">
+      <a href="#oracle">星厅</a>
+      <a href="#folio">书页</a>
+      <a href="#works">作品</a>
+      <a href="#closing">终章</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero cover-hero" id="oracle" aria-label="封面首页">
+      <div class="cover-stage" aria-label="旋转巨兔 3D 封面" data-enter-site>
+        <canvas id="rabbit-canvas"></canvas>
+        <div class="rabbit-stage__fallback cover-fallback">
+          <img src="assets/angel/see-this-angel.jpeg" alt="天使梦核图像" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <img class="cover-sigil cover-sigil--left" src="assets/sacred/seven-vices-wheel.jpg" alt="七宗罪轮盘纹样" loading="lazy" decoding="async" fetchpriority="low">
+      <img class="cover-sigil cover-sigil--right" src="assets/sacred/dore-deluge.jpg" alt="宗教版画风格图像" loading="lazy" decoding="async" fetchpriority="low">
+
+      <div class="cover-title reveal">
+        <p class="small-line">Somewhere above the silver grass</p>
+        <h1>未完成的自画像</h1>
+      </div>
+
+      <div class="cover-prayer reveal" aria-label="祷词">
+        <p>Let the white door open softly.</p>
+        <p>Let every unfinished face keep its little star.</p>
+      </div>
+
+      <div class="cover-oracle reveal" aria-label="封面神谕互动">
+        <button class="cover-card" type="button" data-enter-site data-reading="The mirror keeps a chapel for unnamed work.">
+          <span>Mirror</span>
+          <em>A room learns to breathe.</em>
+        </button>
+        <button class="cover-card is-raised" type="button" data-enter-site data-reading="A pale animal turns the first silver page.">
+          <span>Hare</span>
+          <em>The index wakes under milk-light.</em>
+        </button>
+        <button class="cover-card" type="button" data-enter-site data-reading="Small bells remember what the hand forgot.">
+          <span>Choir</span>
+          <em>The archive begins to sing.</em>
+        </button>
+      </div>
+
+      <button class="enter-gate reveal" type="button" data-enter-site data-scroll-target="#folio">
+        <span>Open the folio</span>
+        <i aria-hidden="true">›</i>
+      </button>
+    </section>
+
+    <section class="folio-section" id="folio" aria-label="可翻页图鉴">
+      <div class="folio-copy reveal">
+        <p class="small-line">A silver index for little doors</p>
+        <h2>银色目录</h2>
+        <div class="atlas-relic" aria-label="天使梦核目录拼贴">
+          <img src="assets/angel/angel-eye.jpeg" alt="天使眼睛与羽翼图像" loading="lazy" decoding="async">
+          <img src="assets/angel/angel-lace-poem.jpeg" alt="天使花体英文图像" loading="lazy" decoding="async">
+          <img src="assets/angel/angel-candle.jpeg" alt="天使烛光装饰图" loading="lazy" decoding="async">
+        </div>
+        <div class="game-panel" aria-label="目录小游戏">
+          <button type="button" class="game-orb is-active" data-book-jump="0">月</button>
+          <button type="button" class="game-orb" data-book-jump="2">羽</button>
+          <button type="button" class="game-orb" data-book-jump="4">镜</button>
+        </div>
+      </div>
+
+      <section class="book-widget reveal" aria-label="可翻页目录图鉴">
+        <div class="book-topline">
+          <p>Book of doors</p>
+          <span class="book-count">page 1 of 5</span>
+        </div>
+        <div class="book-spread" aria-live="polite">
+          <article class="book-page book-page--left"></article>
+          <article class="book-page book-page--right"></article>
+        </div>
+        <div class="book-controls">
+          <button type="button" class="book-prev" aria-label="上一页">‹</button>
+          <button type="button" class="book-next" aria-label="下一页">›</button>
+        </div>
+
+        <div class="book-source" hidden>
+          <article data-page="front">
+            <div class="identity-page">
+              <p class="page-kicker">Frontispiece</p>
+              <h3>Portrait under a small halo</h3>
+              <dl class="book-identity">
+                <div><dt>姓名</dt><dd>夏雨宁</dd></div>
+                <div><dt>学校</dt><dd>四川大学</dd></div>
+                <div><dt>专业</dt><dd>22级建筑学<br>23级新闻学</dd></div>
+                <div><dt>MBTI</dt><dd>ENTP</dd></div>
+                <div><dt>星座</dt><dd>狮子座</dd></div>
+                <div><dt>家乡</dt><dd>浙江</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article data-page="door-deck">
+            <p class="page-kicker">Door one</p>
+            <h3>Manuscripts under glass</h3>
+            <img src="assets/angel/angel-lace-poem.jpeg" alt="天使花体英文图像" loading="lazy" decoding="async">
+            <a class="book-door" href="#works" data-filter-link="deck">Open manuscript</a>
+          </article>
+          <article data-page="door-film">
+            <p class="page-kicker">Door two</p>
+            <h3>Small cinema of ghosts</h3>
+            <img src="assets/angel/see-this-angel.jpeg" alt="白色烛台与羽翼图像" loading="lazy" decoding="async">
+            <a class="book-door" href="#works" data-filter-link="film">Open cinema</a>
+          </article>
+          <article data-page="door-web">
+            <p class="page-kicker">Door three</p>
+            <h3>Interface with a halo</h3>
+            <img src="assets/angel/angel-candle.jpeg" alt="天使梦核装饰图" loading="lazy" decoding="async">
+            <a class="book-door" href="#works" data-filter-link="web">Open interface</a>
+          </article>
+          <article data-page="door-brand">
+            <p class="page-kicker">Door four</p>
+            <h3>Fruit, mascot, omen</h3>
+            <img src="assets/angel/angel-kitten.jpeg" alt="天使小猫图像" loading="lazy" decoding="async">
+            <a class="book-door" href="#works" data-filter-link="brand">Open brand</a>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="portfolio-section" id="works" aria-label="作品集">
+      <div class="portfolio-intro reveal">
+        <p class="small-line">Selected works</p>
+        <h2>四间暗室</h2>
+      </div>
+
+      <div class="portfolio-vault reveal" aria-label="作品入口">
+        <div class="vault-doors" aria-label="作品分类入口">
+          <button class="vault-door filter-chip" type="button" data-filter="deck">
+            <span class="door-plate"><b>01</b><strong>演示与计划书</strong></span>
+            <em>Manuscript</em>
+          </button>
+          <button class="vault-door filter-chip" type="button" data-filter="film">
+            <span class="door-plate"><b>02</b><strong>影像剪辑</strong></span>
+            <em>Cinema</em>
+          </button>
+          <button class="vault-door filter-chip" type="button" data-filter="web">
+            <span class="door-plate"><b>03</b><strong>网页界面</strong></span>
+            <em>Interface</em>
+          </button>
+          <button class="vault-door filter-chip" type="button" data-filter="brand">
+            <span class="door-plate"><b>04</b><strong>品牌视觉</strong></span>
+            <em>Emblem</em>
+          </button>
+        </div>
+      </div>
+
+      <div class="portfolio-tools reveal" aria-label="作品筛选">
+        <button class="filter-chip is-active" type="button" data-filter="all">全部</button>
+        <button class="filter-chip" type="button" data-filter="deck">演示与计划书</button>
+        <button class="filter-chip" type="button" data-filter="film">影像剪辑</button>
+        <button class="filter-chip" type="button" data-filter="web">网页界面</button>
+        <button class="filter-chip" type="button" data-filter="brand">品牌视觉</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card portfolio-card--large tilt-card reveal" data-kind="deck">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_17.png" data-title="码上结婚" data-text="PPT 美化作品设计">
+            <img src="assets/thumbs/wps_doc_17.jpg" alt="码上结婚 PPT 美化作品设计" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>演示视觉</span><h3>码上结婚</h3><p>PPT 美化作品设计</p></div>
+        </article>
+
+        <article class="portfolio-card tilt-card reveal" data-kind="deck">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_18.png" data-title="益绣兴乡" data-text="PPT 美化作品设计">
+            <img src="assets/thumbs/wps_doc_18.jpg" alt="益绣兴乡 PPT 美化作品设计" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>演示视觉</span><h3>益绣兴乡</h3><p>PPT 美化作品设计</p></div>
+        </article>
+
+        <article class="portfolio-card tilt-card reveal" data-kind="deck">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_19.jpeg" data-title="银发心声" data-text="PPT 美化作品设计">
+            <img src="assets/thumbs/wps_doc_19.jpg" alt="银发心声 PPT 美化作品设计" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>演示视觉</span><h3>银发心声</h3><p>PPT 美化作品设计</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--wide tilt-card reveal" data-kind="deck">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_33.png" data-title="守愈身心" data-text="商业计划书设计作品">
+            <img src="assets/thumbs/wps_doc_33.jpg" alt="守愈身心商业计划书设计作品" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>商业计划书</span><h3>守愈身心</h3><p>文化创意项目计划书</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--qr tilt-card reveal" data-kind="film">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_20.png" data-title="纪录片二维码" data-text="渡己成舟">
+            <img src="assets/thumbs/wps_doc_20.jpg" alt="纪录片剪辑作品二维码" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>影像入口</span><h3>纪录片二维码</h3><p>渡己成舟</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--wide tilt-card reveal" data-kind="film">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_21.jpeg" data-title="渡己成舟" data-text="纪录片剪辑作品">
+            <img src="assets/thumbs/wps_doc_21.jpg" alt="渡己成舟纪录片剪辑作品封面" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>纪录片剪辑</span><h3>渡己成舟</h3><p>视频剪辑作品</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--qr tilt-card reveal" data-kind="film">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_22.png" data-title="微电影二维码" data-text="Always online">
+            <img src="assets/thumbs/wps_doc_22.jpg" alt="微电影剪辑作品二维码" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>影像入口</span><h3>微电影二维码</h3><p>Always online</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--large tilt-card reveal" data-kind="film">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_23.jpeg" data-title="Always online" data-text="微电影剪辑作品">
+            <img src="assets/thumbs/wps_doc_23.jpg" alt="Always online 微电影剪辑作品封面" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>微电影剪辑</span><h3>Always online</h3><p>视频剪辑作品</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--qr tilt-card reveal" data-kind="film">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_24.png" data-title="新闻节目二维码" data-text="川越一线">
+            <img src="assets/thumbs/wps_doc_24.jpg" alt="新闻节目剪辑二维码" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>影像入口</span><h3>新闻节目二维码</h3><p>川越一线</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--wide tilt-card reveal" data-kind="film">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_25.jpeg" data-title="川越一线" data-text="新闻节目剪辑">
+            <img src="assets/thumbs/wps_doc_25.jpg" alt="川越一线新闻节目剪辑封面" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>新闻节目剪辑</span><h3>川越一线</h3><p>视频剪辑作品</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--wide tilt-card reveal" data-kind="web">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_26.jpeg" data-title="舞蹈疗愈平台" data-text="网站设计作品">
+            <img src="assets/thumbs/wps_doc_26.jpg" alt="舞蹈疗愈平台网站设计作品" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>网页界面</span><h3>舞蹈疗愈平台</h3><p>网站设计作品</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--tall tilt-card reveal" data-kind="web">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_27.jpeg" data-title="牙医训练平台" data-text="网站设计作品">
+            <img src="assets/thumbs/wps_doc_27.jpg" alt="牙医训练平台网站设计作品" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>网页界面</span><h3>牙医训练平台</h3><p>网站设计作品</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--poster tilt-card reveal" data-kind="brand">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_28.png" data-title="汇源果汁海报 1" data-text="海报设计作品">
+            <img src="assets/thumbs/wps_doc_28.jpg" alt="汇源果汁海报设计作品一" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>品牌海报</span><h3>汇源果汁海报 1</h3><p>海报设计作品</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--poster tilt-card reveal" data-kind="brand">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_29.png" data-title="汇源果汁海报 2" data-text="海报设计作品">
+            <img src="assets/thumbs/wps_doc_29.jpg" alt="汇源果汁海报设计作品二" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>品牌海报</span><h3>汇源果汁海报 2</h3><p>海报设计作品</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--wide tilt-card reveal" data-kind="brand">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_30.png" data-title="Mean Baby" data-text="IP 设计作品">
+            <img src="assets/thumbs/wps_doc_30.jpg" alt="Mean Baby IP 设计作品" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>IP 设计</span><h3>Mean Baby</h3><p>品牌视觉作品</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--poster tilt-card reveal" data-kind="brand">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_31.png" data-title="破局之路" data-text="汇源果汁品牌策划案">
+            <img src="assets/thumbs/wps_doc_31.jpg" alt="汇源果汁品牌策划案破局之路" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>品牌策划</span><h3>破局之路</h3><p>汇源果汁品牌策划案</p></div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--poster tilt-card reveal" data-kind="brand">
+          <button class="media-button" type="button" data-view data-src="个人资料图片/WPS图片批量处理/wps_doc_32.png" data-title="Catalogue" data-text="汇源果汁品牌策划案">
+            <img src="assets/thumbs/wps_doc_32.jpg" alt="汇源果汁品牌策划案目录页" loading="lazy" decoding="async">
+          </button>
+          <div class="card-copy"><span>品牌策划</span><h3>Catalogue</h3><p>汇源果汁品牌策划案</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing" id="closing" aria-label="结尾">
+      <div class="closing__image reveal">
+        <img src="assets/angel/angel-kitten.jpeg" alt="带有天使翅膀的小猫图像" loading="lazy" decoding="async">
+      </div>
+      <div class="closing__copy reveal">
+        <p class="small-line">Afterglow</p>
+        <h2>愿作品自己发光</h2>
+        <a class="action action--primary" href="#top">回到星厅<span aria-hidden="true">›</span></a>
+      </div>
+    </section>
+  </main>
+
+  <div class="viewer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="图片预览">
+    <button class="viewer__close" type="button" aria-label="关闭">×</button>
+    <button class="viewer__nav viewer__nav--prev" type="button" aria-label="上一张">‹</button>
+    <div class="viewer__stage">
+      <img class="viewer__img" alt="" loading="lazy" decoding="async">
+    </div>
+    <button class="viewer__nav viewer__nav--next" type="button" aria-label="下一张">›</button>
+    <div class="viewer__meta">
+      <p class="viewer__title"></p>
+      <p class="viewer__text"></p>
+    </div>
+  </div>
+
+  <script src="script.min.js" defer></script>
+</body>
+</html>
